@@ -18,7 +18,8 @@ const start = () => {
         let w = (100 / maxtime) * timer;
 
         line.style.width = `${w}%`
-        if (w===75)line.style.backgroundColor="yellow";
+        if (w<=75)line.style.backgroundColor="yellow";
+        if (w<=30)line.style.backgroundColor="red";
     }
 
 
