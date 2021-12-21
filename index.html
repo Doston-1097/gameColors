@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center text-uppercase display-3 text-white mt-3">Hello try to press all the colors</h1>
+    <div class="row mt-4">
+        <div class="col-12 col-lg-6 clickers">
+            <div class="row justify-content-center py-2">
+                <audio src="" id="song"></audio>
+                <audio src="" id="error"></audio>
+                <div class="col-2" onclick="btnClick(1)"></div>
+                <div class="col-2" onclick="btnClick(2)"></div>
+                <div class="col-2" onclick="btnClick(3)"></div>
+                <div class="col-2" onclick="btnClick(4)"></div>
+                <div class="col-2" onclick="btnClick(5)"></div>
+                <div class="col-2" onclick="btnClick(6)"></div>
+                <div class="col-2" onclick="btnClick(7)"></div>
+                <div class="col-2" onclick="btnClick(8)"></div>
+                <div class="col-2" onclick="btnClick(9)"></div>
+                <div class="col-2" onclick="btnClick(10)"></div>
+                <div class="col-2" onclick="btnClick(11)"></div>
+                <div class="col-2" onclick="btnClick(12)"></div>
+                <div class="col-2" onclick="btnClick(13)"></div>
+                <div class="col-2" onclick="btnClick(14)"></div>
+                <div class="col-2" onclick="btnClick(15)"></div>
+                <div class="col-2" onclick="btnClick(16)"></div>
+                <div class="col-2" onclick="btnClick(17)"></div>
+                <div class="col-2" onclick="btnClick(18)"></div>
+                <div class="col-2" onclick="btnClick(19)"></div>
+                <div class="col-2" onclick="btnClick(20)"></div>
+                <div class="col-2" onclick="btnClick(21)"></div>
+                <div class="col-2" onclick="btnClick(22)"></div>
+                <div class="col-2" onclick="btnClick(23)"></div>
+                <div class="col-2" onclick="btnClick(24)"></div>
+                <div class="col-2" onclick="btnClick(25)"></div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-5 offset-1     text-white">
+            <div class="d-flex align-items-center justify-content-between">
+                <button class="btn btn-outline-light fs-3 py-2 px-5 fw-normal mt-2" onclick="start()">Start</button>
+                <h3 id="timer"></h3>
+            </div>
+
+            <div class="line" style="width: 100%" id="line"></div>
+
+            <h1 class="mt-3"  id="score"></h1>
+        </div>
+    </div>
+</div>
+<div class="finish d-none" id="finish">
+    <div class="row mt-5 fw-bold">
+        <div class="col-6 d-flex flex-column align-items-center justify-content-center offset-3">
+           <audio src="" id="over"></audio>
+            <h1>Time is Up</h1>
+            <h2>Your score is : <span id="scoreFor"></span></h2>
+            <h2 class="my-2">Do you want to replay?</h2>
+            <button onclick="reload()" class="againBtn btn my-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
+                     class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+                    <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>
