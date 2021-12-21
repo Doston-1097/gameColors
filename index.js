@@ -31,7 +31,7 @@ const start = () => {
         setTimeout(()=>{
             setInterval(() => {
                 color();
-            }, 200);
+            }, 400);
         },500)
 
         setInterval(() => {
