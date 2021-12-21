@@ -71,10 +71,9 @@ const start = () => {
 
     colors();
     btnClick = (e) => {
-
         if (cols[e - 1].classList.contains("bg-success")){
             const song = document.querySelector("#song");
-            song.src = "./song.mp3";
+            song.src = "./song1.mp3";
             song.play();
             cols[e - 1].classList.remove("bg-success");
             counter++;
