@@ -32,7 +32,10 @@ const start = () => {
         setTimeout(()=>{
             setInterval(() => {
                 color();
-            }, 400);
+            }, 300);
+            setInterval(()=>{
+                color2();
+            },200)
         },500)
 
         setInterval(() => {
@@ -57,6 +60,12 @@ const start = () => {
 
     const color = () => {
         cols[getRandom()].classList.add("bg-success");
+
+    };
+
+
+    const color2 = () => {
+        cols[getRandom()].classList.remove("bg-success");
 
     };
 
